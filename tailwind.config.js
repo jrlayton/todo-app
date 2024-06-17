@@ -9,13 +9,12 @@ module.exports = {
       colors: {
         primary: {
           "bright-blue": "hsl(220, 98%, 61%)",
-          "check-background":
-            "linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%))",
         },
         light: {
           "very-light-gray": "hsl(0, 0%, 98%)",
           "very-light-grayish-blue": "hsl(236, 33%, 92%)",
           "light-grayish-blue": "hsl(233, 11%, 84%)",
+          "l-g-b": "hsl(233, 11%, 84%)",
           "dark-grayish-blue": "hsl(236, 9%, 61%)",
           "very-dark-grayish-blue": "hsl(235, 19%, 35%)",
         },
@@ -34,6 +33,8 @@ module.exports = {
         "sm-banner-dark": "url('images/bg-mobile-dark.jpg')",
         "lg-banner-light": "url('images/bg-desktop-light.jpg')",
         "lg-banner-dark": "url('images/bg-desktop-dark.jpg')",
+        "check-background":
+          "linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%))",
       },
     },
     fontFamily: {
