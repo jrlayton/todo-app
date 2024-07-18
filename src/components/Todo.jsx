@@ -22,7 +22,7 @@ function Todo({ description, completed, setCompleted, onClick, className }) {
         <span
           className={`flex-1 text-light-very-dark-grayish-blue dark:text-dark-light-grayish-blue ${
             completed
-              ? "line-through text-light-l-g-b dark:text-dark-very-dark-grayish-blue-1"
+              ? "line-through text-light-light-grayish-blue dark:text-dark-very-dark-grayish-blue-1"
               : ""
           }`}
         >
