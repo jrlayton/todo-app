@@ -53,15 +53,13 @@ function TodoList({ todos, setTodos }) {
           className={`${index === 0 ? "rounded-t-md" : ""}`}
         />
       ))}
-      <Card className={"rounded-b-md"}>
+      <Card className={`${todos.length === 0 ? "rounded-md" : "rounded-b-md"}`}>
         <div className="flex flex-row items-center rounded-b-md">
-          <div>
-            <span className="text-light-dark-grayish-blue dark:text-dark-dark-grayish-blue">
-              {`${
-                filteredTodos.filter((todo) => !todo.completed).length
-              } items left`}
-            </span>
-          </div>
+          <span className="text-light-dark-grayish-blue dark:text-dark-dark-grayish-blue">
+            {`${
+              filteredTodos.filter((todo) => !todo.completed).length
+            } items left`}
+          </span>
           <div className="flex flex-row gap-4 mx-auto group text-light-dark-grayish-blue dark:text-dark-dark-grayish-blue">
             <span
               className={`hover:cursor-pointer hover:text-light-very-dark-grayish-blue dark:hover:text-dark-light-grayish-blue-hover ${
