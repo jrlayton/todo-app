@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Icon from "./Icon";
-import Card from "./Card";
 
-function ThemeToggle({ className }) {
-  const [theme, setTheme] = useState("light");
+function ThemeToggle() {
+  const [theme, setTheme] = useState("");
 
   useEffect(() => {
-    // Check the user's theme preference
-    console.log(localStorage.theme);
     if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
+      localStorage.getItem("theme") === "dark" ||
+      window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
       setTheme("dark");
       document.documentElement.classList.remove("light");
@@ -40,7 +36,7 @@ function ThemeToggle({ className }) {
   };
 
   return (
-    <div className={className}>
+    <div className={"sm:w-8 sm:h-8 w-6 h-6"}>
       <Icon
         name={theme === "light" ? "moon" : "sun"}
         onClick={toggleTheme}
