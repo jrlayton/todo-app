@@ -1,14 +1,14 @@
 import React from "react";
 import ThemedBanner from "./components/ThemedBanner";
 import ThemedBackground from "./components/ThemedBackground";
-import MainContent from "./components/MainContent";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
     <>
       <ThemedBanner className={"-z-1"} />
       <ThemedBackground className={"-z-1"} />
-      <MainContent className={"z-0"} />
+      <TodoList className={"z-0"} />
     </>
   );
 }
